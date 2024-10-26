@@ -1,0 +1,32 @@
+.projects-container {
+    display: flex;
+    color: white;
+    font-weight: 600;
+    margin-top: 5rem;
+}
+
+
+.project-name {
+    width: 25%;
+    display: inline;
+}
+
+.project-description {
+    width: 50%;
+    display: inline;
+}
+
+.project-link {
+    width: 25%;
+    display: inline;
+}
+
+.website-links {
+    margin-top: 0.6rem;
+    display: block;
+    text-decoration: none;
+}
+
+p {
+    color: white;
+}

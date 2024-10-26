@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 2;
+    border-top: none;
+    border-right: none;
+}
+
+.nav span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    font-size: 5vh;
+}
+
+.site title {
+    font-size: 2rem;
+}
+
+.app-bar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
+
+.a {
+    text-decoration: none;
+    flex-direction: column;
+    color: white;
+
+    text-transform: uppercase;
+    font-weight: 500;
+
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+        color: green;
+    }
+}
+
+.app-navbar-menu {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
+
+    svg {
+        width: 70;
+        height: 70%;
+        color: white;
+    }
+
+    div {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+
+        padding: 1rem;
+
+        width: 80%;
+        height: 100vh;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        background-color: green;
+        background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+        background-size: cover;
+        background-repeat: repeat;
+
+        svg {
+            width: 35px;
+            height: 35px;
+            color: green;
+            margin: 0.5rem 1rem;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        li {
+            margin: 1rem;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: 500;
+
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                    color: green;
+                }
+            }
+
+            @media screen and (min-width: 900px) {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        display: none;
+    }
+}
+
+li {
+    margin: 0 1rem;
+    cursor: pointer;
+
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+.linkedin-icon {
+    color: white;
+    width: 50px;
+    height: 40px;
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+        color: #0077B5;
+    }
+}
+
+.github-icon {
+    color: white;
+    width: 50px;
+    height: 40px;
+    transition: 0.4s ease-in-out;
+
+
+    &:hover {
+        color: #333;
+    }
+}

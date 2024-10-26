@@ -1,0 +1,20 @@
+body {
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+}
+
+.app__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-text {
+    font-size: 0.8rem;
+    text-align: left;
+    color: var(--gray-color);
+    line-height: 1.5;
+
+    @media screen and (min-width: 2000px) {
+        font-size: 1.75rem;
+    }
+}
