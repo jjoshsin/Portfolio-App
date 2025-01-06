@@ -4,6 +4,7 @@ import "./Form.css";
 import { motion } from "framer-motion";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast, Toaster } from "react-hot-toast";
 
 export default function Form() {
     const form = useRef();
@@ -27,25 +28,28 @@ export default function Form() {
         e.preventDefault();
         const validationErrors = {};
         if (!values.name) {
-            validationErrors.name = "name is required!"
+            validationErrors.name = "Name is required!"
         }
 
         if (!values.email) {
-            validationErrors.email = "email is required!"
+            validationErrors.email = "Email is required!"
         }
         if (!values.message) {
-            validationErrors.message = "message is required!"
+            validationErrors.message = "Message is required!"
         }
 
         if (Object.keys(validationErrors).length === 0) {
+            values.name = "";
+            values.email = "";
+            values.subject = "";
+            values.message = "";
             emailjs
                 .sendForm('service_rgiy7e3', 'template_704jnuq', form.current, {
                     publicKey: 'eFA-uDCCZoKllOKny',
                 })
                 .then(
                     (e) => {
-                        // console.log(result.text);
-                        alert("SUCCESSFULLY SUBMITTED");
+                        toast.success("SUCCESSFULLY SUBMITTED");
                         e.target.reset();
                     },
                     (error) => {
@@ -54,7 +58,7 @@ export default function Form() {
                 );
         }
         else {
-            alert("SOMETHING WENT WRONG!")
+            toast.alert("SOMETHING WENT WRONG!")
         }
     }
 
@@ -111,7 +115,8 @@ export default function Form() {
                     className={errors.message && touched.message ? "input-error" : ""}
                 ></textarea>
                 {errors.message && touched.message && (<p className="error">{errors.message}</p>)}
-                <button type="submit" className="btn">Submit</button>
+                <button type="submit" className="btn ">Submit</button>
+                <Toaster position="top-center" />
             </form>
         </motion.div>
     );

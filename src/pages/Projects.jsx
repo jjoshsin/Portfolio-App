@@ -71,7 +71,7 @@ export default function Projects() {
                 <br />
                 <br />
                 <br />
-                <p>No Link yet</p>
+                <a href="https://github.com/jjoshsin/Portfolio-App" className="website-links">Github Link</a>
                 <br />
                 <br />
                 <br />

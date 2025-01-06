@@ -12,6 +12,7 @@ import python from "./tech/python.png";
 import cpp from "./tech/cpp.png";
 import java from "./tech/java.png";
 import home from "./home.png";
+import green from "./green.png";
 
 export {
   github,
@@ -27,5 +28,6 @@ export {
   threejs,
   python,
   cpp,
-  java
+  java,
+  green
 };

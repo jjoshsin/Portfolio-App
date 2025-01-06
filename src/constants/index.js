@@ -39,10 +39,6 @@ const technologies = [
         icon: mongodb,
     },
     {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
         name: "git",
         icon: git,
     },
@@ -58,10 +54,6 @@ const technologies = [
         name: "java",
         icon: java,
     },
-    {
-        name: "github",
-        icon: github,
-    }
 ];
 
 export { technologies };
