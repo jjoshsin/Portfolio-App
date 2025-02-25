@@ -36,3 +36,9 @@
 p {
     color: white;
 }
+
+@media screen and (min-width: 320px) {
+    .projects-container {
+        width: 100%;
+    }
+}

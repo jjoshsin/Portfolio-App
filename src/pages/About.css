@@ -23,6 +23,13 @@
     align-items: center;
 }
 
+@media screen and (min-width: 320px) {
+    .about-top {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .about-bottom {
         width: 80%;
