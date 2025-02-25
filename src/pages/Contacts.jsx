@@ -12,9 +12,10 @@ export default function Contacts() {
                 transition={{ duration: 1, ease: "easeOut" }}
             >
                 <h1 className="heading">Contact Me! </h1>
-                <p className="contact-message">I am open to internships/job opportunities as of right now. Please feel free to contact me through this page or through linkedin.
-                    You can also just send me personal messages as well just to talk!
-                </p>
+                <div className="contact-message">
+                    <p>I am open to internships/job opportunities as of right now. Please feel free to contact me through this page or through linkedin.
+                        You can also just send me personal messages as well just to talk!</p>
+                </div>
             </motion.div>
             <motion.div
                 initial={{ x: "300px", opacity: 0 }}

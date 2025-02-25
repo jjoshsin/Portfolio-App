@@ -1,14 +1,23 @@
 .contact-container {
-    height: fit-content;
+    height: 100%;
+    justify-content: center;
 }
 
 .heading {
     color: white;
     font-size: 2rem;
-    font-weight: 700;
+
 }
 
 .contact-message {
     color: white;
+    height: fit-content;
     font-size: 1.3rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 900px) {
+    .contact-message {
+        width: 100%;
+    }
 }
